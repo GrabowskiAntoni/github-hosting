@@ -1,0 +1,20 @@
+h1 {
+    color: rgb(175, 89, 89)
+}
+
+.btn-danger {
+    background-color: rgb(175, 89, 89);
+    border: none;
+    color: rgb(216, 171, 237);
+    margin-top: 15px;
+}
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}

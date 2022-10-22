@@ -1,0 +1,258 @@
+<div class="container">
+  <div>
+    <h1 class="display-3 d-flex justify-content-center pt-5 pb-5">
+      Rozwiąż krzyżówkę
+    </h1>
+    <div class="row">
+      <ol class="col">
+        <li>Co studiuje Twój facet?</li>
+        <li>Jak ma na imię Twoja szefowa?</li>
+        <li>O której godzinie mama Cię urodziła?</li>
+        <li>Ile ważyłaś tuż po urodzeniu?</li>
+        <li>Jakie żarcie uznałyście za najlepsze z Helą w Londynie?</li>
+        <li>
+          Jaka była twoja i Antka ulubiona piosenka Bruno Marsa za dzieciaka?
+        </li>
+        <li>
+          Jak nazwał Cię tatuś, kiedy dowiedział się, że jesteś w brzuchu?
+        </li>
+        <li>Co przywiozła ci Tosia z londynu?</li>
+        <div *ngIf="win">
+          <p class="d-flex justify-content-center pt-5">Brawo! Wygrałaś!</p>
+          <p class="d-flex justify-content-center">
+            Wpisz literki z haseł o podanym numerze w jej polu
+          </p>
+          <p class="d-flex justify-content-center align-items-center key">
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="1"
+            />
+            7V
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="4"
+            />
+            -
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="6"
+            />
+            V
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="2"
+            />
+            Y-E
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="5"
+            />
+            XW-
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="8"
+            />
+
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="7"
+            />
+            8
+            <input
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase();"
+              class="specialInput"
+              placeholder="3"
+            />
+          </p>
+          <p class="d-flex justify-content-center">Kochamy cię</p>
+        </div>
+      </ol>
+      <div class="col">
+        <p class="d-flex justify-content-center">
+          <input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="specialInput"
+            maxlength="1"
+            [(ngModel)]="s1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          />
+        </p>
+        <p class="d-flex justify-content-center">
+          <input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="specialInput"
+            maxlength="1"
+            [(ngModel)]="s2"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          />
+        </p>
+        <p class="d-flex justify-content-center">
+          <input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="specialInput"
+            [(ngModel)]="s3"
+            maxlength="1"
+          />
+        </p>
+        <p class="d-flex justify-content-center">
+          <input
+            type="text"
+            class="specialInput"
+            maxlength="1"
+            [(ngModel)]="s4"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          />
+        </p>
+        <p class="d-flex justify-content-center">
+          <input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="specialInput"
+            [(ngModel)]="s5"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          />
+        </p>
+        <p class="d-flex justify-content-center">
+          <input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="specialInput"
+            [(ngModel)]="s6"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" />
+        </p>
+        <p class="d-flex justify-content-center">
+          <input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="specialInput"
+            [(ngModel)]="s7"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          />
+        </p>
+        <p class="d-flex justify-content-center">
+          <input
+            type="text"
+            class="specialInput"
+            [(ngModel)]="s8"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          /><input type="text" class="normalInput" maxlength="1" /><input
+            type="text"
+            class="normalInput"
+            maxlength="1"
+          />
+        </p>
+        <p class="d-flex justify-content-center">
+          <button class="btn btn-danger" (click)="checkWin()" type="button">
+            Sprawdź
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
